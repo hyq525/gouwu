@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0">
+	<title>我的家</title>
+	<link rel="stylesheet" href="css/pubilc1.css">
+	<link rel="stylesheet" href="css/index7.css">
+	<link rel="stylesheet" href="css/index1.css">
+	<script src="js/rem.js"></script>
+	<style>
+	</style>
+</head>
+<body>
+
+	<div class="head">
+		<div class="head_left">
+			<a href="wo.html"><p class="head_caidan"><</p></a>
+		</div>
+	</div>
+	<div class="head_other"></div>
+	<main class="user">
+		<div class="user_img">
+			<div class="user_img_touxiang">
+				<img src="img/qq117ff508e.jpg" alt="">
+			</div>
+			<div class="user_denglu">
+				<span>退出登陆</span>
+			</div>
+		</div>
+		<div class="user_img user_zhuanji_1">
+			<h1 class="user_zhuanji">用户昵称</h1>
+			<h1 class="denglu_zhuangtai">QAQ</h1>
+		</div>
+		<div class="user_img user_zhuanji_1">
+			<h1 class="user_zhuanji">手机号</h1>
+			<h1 class="denglu_zhuangtai">8888888888</h1>
+		</div>
+		<div class="user_img user_zhuanji_1">
+			<h1 class="user_zhuanji">收货地址</h1>
+			<h1 class="denglu_zhuangtai">xxxxxxxxxxx</h1>
+		</div>
+		<div class="user_img user_zhuanji_1">
+			<h1 class="user_zhuanji">我的收藏</h1>
+			<h1 class="denglu_zhuangtai">></h1>
+		</div>
+		<div class="user_img user_zhuanji_1">
+			<h1 class="user_zhuanji">设置</h1>
+			<h1 class="denglu_zhuangtai">&gt;</h1>
+		</div>
+	</main>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script>
+        $(".head_left").click(function (e) {
+            $(".caidan_list").show(200);
+
+
+            $(document).one("click", function(){
+                $(".caidan_list").hide(200);
+            });
+
+            e.stopPropagation();
+
+        });
+        $(".caidan_list").on('click',function (e) {
+            e.stopPropagation();
+        });
+
+	</script>
+</body>
+</html>
